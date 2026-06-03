@@ -5,7 +5,7 @@ Deep learning-based OCR system for recognizing handwritten text from full page i
 ## Current Status
 
 **Phase 1: Character Recognition (Complete)**
-- ✅ Trained CNN on EMNIST 'byclass' (62 classes: digits, uppercase, lowercase)
+- ✅ Trained CNN on EMNIST `byclass` (62 classes: digits, uppercase, lowercase)
 - ✅ Fine-tuned on personal handwriting using selective OHEM
 - ✅ Achieved 24/26 (92.3%) accuracy on uppercase letters
 - ✅ Model handles O→D and V→Y errors (fixable with spell checking)
@@ -51,21 +51,21 @@ Final text
 - `emnist_cnn_focal.pth` - Best character recognition model (92.3% accuracy)
 - `emnist_cnn_model.py` - CNN architecture definition
 - `emnist_utils.py` - Character-to-label encoding utilities
-- 'train_emnist.py' - Training base EMNIST model without personalized handwriting training
-- 'emnist_cnn.pth' - base EMNIST CNN
-- 'train_combined_focal.py' - Training the emnist_cnn.pth model using focal loss and testing
-- 'test_emnist.py' - testing model on EMNIST data
-- 'test_my_letters.py' - testing model on personal handwriting data
+- `train_emnist.py` - Training base EMNIST model without personalized handwriting training
+- `emnist_cnn.pth` - base EMNIST CNN
+- `train_combined_focal.py` - Training the emnist_cnn.pth model using focal loss and testing
+- `test_emnist.py` - testing model on EMNIST data
+- `test_my_letters.py` - testing model on personal handwriting data
 
 **Data:**
-- 'EMNIST data' - Pytorch dataset
+- `EMNIST data` - Pytorch dataset
 - `my_letters/` - Test set (26 uppercase letters)
 - `Set_2/`, `Set_3/`, `Set_4/`, `Set_5/` - Training sets (26 letters each)
 
 ## Training Details
 
 **Dataset:**
-- Base: EMNIST 'byclass' split (600k+ samples)
+- Base: EMNIST `byclass` split (600k+ samples)
 - Personalization: 4 sets of handwritten alphabet (104 samples)
 - Held-out test: 26 uppercase letters in `my_letters/`
 
