@@ -51,12 +51,16 @@ Final text
 - `emnist_cnn_focal.pth` - Best character recognition model (92.3% accuracy)
 - `emnist_cnn_model.py` - CNN architecture definition
 - `emnist_utils.py` - Character-to-label encoding utilities
+- 'train_emnist.py' - Training base EMNIST model without personalized handwriting training
+- 'emnist_cnn.pth' - base EMNIST CNN
+- 'train_combined_focal.py' - Training the emnist_cnn.pth model using focal loss and testing
+- 'test_emnist.py' - testing model on EMNIST data
+- 'test_my_letters.py' - testing model on personal handwriting data
 
 **Data:**
+- 'EMNIST data' - Pytorch dataset
 - `my_letters/` - Test set (26 uppercase letters)
 - `Set_2/`, `Set_3/`, `Set_4/`, `Set_5/` - Training sets (26 letters each)
-
-**Training Scripts:** (archived - to be replaced with CRNN pipeline)
 
 ## Training Details
 
@@ -105,14 +109,6 @@ numpy
 scikit-image
 matplotlib
 ```
-
-## Timeline
-
-- Week 1: Download IAM, implement CRNN
-- Week 2: Train CRNN on IAM dataset
-- Week 3: Fine-tune on personal handwriting
-- Week 4: Line segmentation
-- Week 5: Integration and testing
 
 ## Learning Journey
 
