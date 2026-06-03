@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environment
+myenv/
+venv/
+env/
+ENV/
+
+# Data (too large for git)
+data/
+*.zip
+*.tar.gz
+
+# Large model files (use Git LFS or exclude)
+# Uncomment if models are too large (>100MB)
+# *.pth
+# *.pt
+# *.h5
+
+# Training outputs
+*.log
+runs/
+logs/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archive folder (old experiments)
+archive_old_experiments/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
