@@ -47,7 +47,8 @@ logs/
 Thumbs.db
 
 # Archive folder (old experiments)
-archive_old_experiments/
+# Commented out - we want to track these for learning history
+# archive_old_experiments/
 
 # Temporary files
 tmp/
