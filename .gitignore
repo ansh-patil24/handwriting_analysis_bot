@@ -27,6 +27,10 @@ data/
 # *.pt
 # *.h5
 
+# Training checkpoints (too large for GitHub)
+checkpoints/
+checkpoints_words/
+
 # Training outputs
 *.log
 runs/
